@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>家庭旅行合集</title>
+</head>
+<body>
+  <h1>家庭旅行合集</h1>
+  <ul>
+    <li><a href="suzhou-trip-share.html">苏州行</a></li>
+    <li><a href="nanjing-trip-share.html">南京行</a></li>
+  </ul>
+</body>
+</html>
