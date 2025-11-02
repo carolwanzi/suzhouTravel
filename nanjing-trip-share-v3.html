@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>南京2天家庭旅游规划表 - 精美行程指南</title>
+  <meta name="description" content="南京2天家庭旅游规划，包含玄武湖、南京博物院、总统府、夫子庙、老门东等经典景点，适合带老人小孩的家庭游">
+  <meta name="keywords" content="南京旅游,南京2日游,家庭旅游,玄武湖,南京博物院,总统府,夫子庙,老门东">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="南京2天家庭旅游规划表">
+  <meta property="og:description" content="南京2天家庭旅游规划，包含玄武湖、南京博物院、总统府、夫子庙、老门东等经典景点">
+  <meta property="og:image" content="">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="南京2天家庭旅游规划表">
+  <meta property="twitter:description" content="南京2天家庭旅游规划，包含玄武湖、南京博物院、总统府、夫子庙、老门东等经典景点">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, "Noto Sans CJK SC", sans-serif;
+      background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      padding: 20px;
+      color: #333;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
+    }
+    .share-buttons {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .share-btn {
+      background: white;
+      color: #3498db;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .share-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    .share-btn i { font-size: 16px; }
+    .print-button { background: #2c3e50; color: white; }
+    .print-button:hover { background: #34495e; }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      border-radius: 15px;
+    }
+    /* 标题区 */
+    .header { border-bottom: 3px solid #3498db; padding-bottom: 20px; margin-bottom: 30px; text-align: center; }
+    .header h1 { font-size: 32px; color: #3498db; margin-bottom: 15px; line-height: 1.25; }
+    .header-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      font-size: 14px;
+    }
+    .info-item { display: flex; align-items: center; gap: 8px; justify-content: center; }
+    .info-item i { color: #3498db; width: 18px; }
+    /* 行程概览 */
+    .overview { margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #e8f4f8 0%, #d6eaf8 100%); border-left: 4px solid #3498db; border-radius: 8px; }
+    .overview h2 { font-size: 20px; color: #2c3e50; margin-bottom: 20px; }
+    .day-card { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 3px solid #3498db; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .day-title { font-weight: 700; color: #2c3e50; margin-bottom: 10px; font-size: 16px; }
+    .day-activities { display: flex; gap: 10px; flex-wrap: wrap; }
+    .activity-tag { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; background: #e8f4f8; border-radius: 20px; font-size: 13px; color: #2980b9; }
+    .activity-tag i { font-size: 12px; }
+    /* 详细时间表 */
+    .schedule { margin: 30px 0; }
+    .schedule h2 { font-size: 20px; color: #2c3e50; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498db; }
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .time-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      min-width: 700px;
+    }
+    .time-table th { background: #3498db; color: white; padding: 12px; text-align: left; font-weight: 600; }
+    .time-table td { padding: 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    .time-table tr:nth-child(even) { background: #f8f9fa; }
+    .time-table tr:hover { background: #e8f4f8; }
+    .time-table .time { font-weight: 600; color: #2c3e50; width: 120px; white-space: nowrap; }
+    .time-table .location { color: #555; }
+    .time-table .details { font-size: 12px; color: #777; }
+    .icon-cell { text-align: center; width: 40px; }
+    .icon-cell i { font-size: 16px; }
+    .icon-attraction { color: #e74c3c; }
+    .icon-food { color: #f39c12; }
+    .icon-transport { color: #3498db; }
+    .icon-hotel { color: #9b59b6; }
+    /* 交通信息 */
+    .transport { margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #fff9e6 0%, #fff5d6 100%); border-left: 4px solid #f39c12; border-radius: 8px; }
+    .transport h2 { font-size: 20px; color: #2c3e50; margin-bottom: 20px; }
+    .route-item { margin-bottom: 15px; padding: 15px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .route-title { font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 15px; }
+    .route-details { font-size: 13px; color: #666; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 8px; }
+    .route-details span { display: flex; align-items: center; gap: 5px; }
+    /* 停车信息 */
+    .parking { margin: 30px 0; }
+    .parking h2 { font-size: 20px; color: #2c3e50; margin-bottom: 20px; }
+    .parking-item { margin-bottom: 15px; padding: 15px; background: linear-gradient(135deg, #e8f4f8 0%, #d6eaf8 100%); border-left: 3px solid #3498db; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .parking-name { font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 15px; }
+    .parking-details { font-size: 13px; color: #666; }
+    /* 费用预算 */
+    .budget { margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #27ae60; border-radius: 8px; }
+    .budget h2 { font-size: 20px; color: #2c3e50; margin-bottom: 20px; }
+    .budget-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .budget-item { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .budget-label { font-size: 13px; color: #666; margin-bottom: 8px; }
+    .budget-amount { font-size: 20px; font-weight: 700; color: #27ae60; }
+    .budget-total { grid-column: 1 / -1; background: #2c3e50; color: white; padding: 20px; border-radius: 8px; margin-top: 10px; }
+    .budget-total .budget-label { color: #ecf0f1; font-size: 14px; }
+    .budget-total .budget-amount { color: white; font-size: 28px; }
+    /* 实用信息 */
+    .tips { margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; border-radius: 8px; }
+    .tips h2 { font-size: 20px; color: #2c3e50; margin-bottom: 20px; }
+    .tips-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .tip-item { display: flex; align-items: start; gap: 10px; font-size: 13px; padding: 12px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .tip-item i { color: #ff9800; margin-top: 2px; font-size: 16px; }
+    .emergency-contacts { margin-top: 20px; padding: 15px; background: #ffebee; border-left: 3px solid #e91e63; border-radius: 8px; }
+    .emergency-contacts h3 { font-size: 16px; color: #c62828; margin-bottom: 10px; }
+    .contact-item { font-size: 13px; margin-bottom: 5px; }
+    /* Amap 链接块 */
+    .amap-block {
+      margin-top: 30px;
+      padding: 20px;
+      background: linear-gradient(135deg, #e8f4f8 0%, #d6eaf8 100%);
+      border-left: 4px solid #3498db;
+      border-radius: 8px;
+    }
+    .amap-code {
+      background: white;
+      padding: 8px;
+      border-radius: 5px;
+      display: block;
+      margin-top: 8px;
+      font-size: 11px;
+      word-break: break-all;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    /* 分享遮罩 */
+    .share-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      z-index: 1500;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .share-overlay.active { display: flex; }
+    .share-tips {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 320px;
+      width: 100%;
+    }
+    .share-tips h3 { margin-bottom: 12px; color: #2c3e50; font-size: 18px; }
+    .share-tips .close-btn {
+      margin-top: 16px;
+      padding: 10px 16px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    /* Toast */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 72px;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      z-index: 1600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s;
+      max-width: 80%;
+      text-align: center;
+    }
+    .toast.show { opacity: 1; }
+    /* 响应式 */
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .share-buttons {
+        top: env(safe-area-inset-top, 12px);
+        right: 12px;
+        gap: 8px;
+        flex-direction: column;
+      }
+      .share-btn { padding: 9px 12px; font-size: 13px; }
+      .container { padding: 20px; border-radius: 12px; }
+      .header h1 { font-size: 24px; }
+      .header-info { grid-template-columns: 1fr; }
+    }
+    /* 打印样式（桌面） */
+    @media print {
+      body { background: white; padding: 0; }
+      .share-buttons, .toast { display: none !important; }
+      .container { max-width: 100%; padding: 10mm; box-shadow: none; border-radius: 0; }
+      .schedule, .transport, .parking, .budget, .tips { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="share-buttons" role="navigation" aria-label="页面操作">
+    <button class="share-btn" onclick="onShare()" aria-label="分享">
+      <i class="fab fa-weixin" aria-hidden="true"></i><span>分享</span>
+    </button>
+    <button class="share-btn print-button" onclick="onPrint()" aria-label="打印">
+      <i class="fas fa-print" aria-hidden="true"></i><span>打印</span>
+    </button>
+    <button class="share-btn" onclick="copyLink()" aria-label="复制链接">
+      <i class="fas fa-link" aria-hidden="true"></i><span>复制链接</span>
+    </button>
+  </div>
+
+  <div class="share-overlay" id="shareOverlay" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+    <div class="share-tips">
+      <h3 id="shareTitle">分享提示</h3>
+      <p>若在微信中，请点击右上角菜单<br>选择“发送给朋友”或“分享到朋友圈”</p>
+      <button class="close-btn" onclick="closeShareOverlay()">知道了</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div class="container">
+    <!-- 标题区 -->
+    <div class="header">
+      <h1><i class="fas fa-map-marked-alt" aria-hidden="true"></i> 南京2天家庭旅游规划表</h1>
+      <div class="header-info">
+        <div class="info-item">
+          <i class="fas fa-users" aria-hidden="true"></i>
+          <span><strong>出行人员：</strong>6人（夫妻2人 + 长辈3人 + 2岁半小孩1人）</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-car" aria-hidden="true"></i>
+          <span><strong>出行方式：</strong>自驾游（上海金山工业区出发）</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+          <span><strong>行程天数：</strong>2天1晚</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-route" aria-hidden="true"></i>
+          <span><strong>总距离：</strong>约323公里（单程）</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 行程概览 -->
+    <div class="overview">
+      <h2><i class="fas fa-list-ul" aria-hidden="true"></i> 行程概览</h2>
+      <div class="day-card">
+        <div class="day-title">第一天 - 轻松游览</div>
+        <div class="day-activities">
+          <span class="activity-tag"><i class="fas fa-mountain icon-attraction" aria-hidden="true"></i> 玄武湖景区（上午）</span>
+          <span class="activity-tag"><i class="fas fa-university icon-attraction" aria-hidden="true"></i> 南京博物院（下午）</span>
+          <span class="activity-tag"><i class="fas fa-bed icon-hotel" aria-hidden="true"></i> 酒店入住（晚上）</span>
+        </div>
+      </div>
+      <div class="day-card">
+        <div class="day-title">第二天 - 文化之旅</div>
+        <div class="day-activities">
+          <span class="activity-tag"><i class="fas fa-landmark icon-attraction" aria-hidden="true"></i> 总统府（上午）</span>
+          <span class="activity-tag"><i class="fas fa-water icon-attraction" aria-hidden="true"></i> 夫子庙秦淮风光带（下午）</span>
+          <span class="activity-tag"><i class="fas fa-store icon-attraction" aria-hidden="true"></i> 老门东（下午）</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 详细时间表 -->
+    <div class="schedule">
+      <h2><i class="fas fa-clock" aria-hidden="true"></i> 详细时间表</h2>
+      <div class="table-scroll">
+        <table class="time-table" role="table">
+          <thead>
+            <tr>
+              <th class="icon-cell"></th>
+              <th>时间</th>
+              <th>活动/景点</th>
+              <th>地址</th>
+              <th>详情</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-car icon-transport" aria-hidden="true"></i></td>
+              <td class="time">07:00-10:30</td>
+              <td><strong>出发</strong><br>上海金山工业区 → 南京</td>
+              <td class="location">G15沈海高速 → G2京沪高速</td>
+              <td class="details">距离323km，约3.6小时<br>过路费：135-160元（单程）</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-mountain icon-attraction" aria-hidden="true"></i></td>
+              <td class="time">10:30-13:00</td>
+              <td><strong>玄武湖景区</strong></td>
+              <td class="location">玄武门路1号</td>
+              <td class="details">免费，AAAA级<br>停车：5-10元/小时<br>⭐⭐⭐⭐ 较方便</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-utensils icon-food" aria-hidden="true"></i></td>
+              <td class="time">13:00-14:00</td>
+              <td><strong>午餐</strong></td>
+              <td class="location">景区内或周边</td>
+              <td class="details">建议选择清淡菜品</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-car icon-transport" aria-hidden="true"></i></td>
+              <td class="time">14:00-14:25</td>
+              <td><strong>前往</strong>南京博物院</td>
+              <td class="location">市区道路</td>
+              <td class="details">距离5.9km，约15-25分钟<br>无过路费</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-university icon-attraction" aria-hidden="true"></i></td>
+              <td class="time">14:30-17:00</td>
+              <td><strong>南京博物院</strong></td>
+              <td class="location">中山东路321号</td>
+              <td class="details">免费（需提前预约）<br>停车：6-10元/小时<br>⭐⭐⭐ 周末紧张</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-bed icon-hotel" aria-hidden="true"></i></td>
+              <td class="time">18:00</td>
+              <td><strong>酒店入住</strong></td>
+              <td class="location">夫子庙/新街口附近</td>
+              <td class="details">建议提前预订<br>预算：300-600元/晚</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-landmark icon-attraction" aria-hidden="true"></i></td>
+              <td class="time">09:00-12:00</td>
+              <td><strong>总统府</strong></td>
+              <td class="location">长江路292号</td>
+              <td class="details">需购票，AAAA级<br>停车：6-12元/小时<br>⭐⭐⭐ 周末紧张</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-utensils icon-food" aria-hidden="true"></i></td>
+              <td class="time">12:00-13:00</td>
+              <td><strong>午餐</strong></td>
+              <td class="location">总统府周边</td>
+              <td class="details">推荐特色菜</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-car icon-transport" aria-hidden="true"></i></td>
+              <td class="time">13:00-13:25</td>
+              <td><strong>前往</strong>夫子庙</td>
+              <td class="location">市区道路</td>
+              <td class="details">距离5.1km，约15-25分钟<br>无过路费</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-water icon-attraction" aria-hidden="true"></i></td>
+              <td class="time">13:30-16:00</td>
+              <td><strong>夫子庙秦淮风光带</strong></td>
+              <td class="location">平江府路80-1号</td>
+              <td class="details">免费，AAAAA级<br>可坐游船<br>停车：8-15元/小时<br>⭐⭐⭐ 周末紧张</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-walking icon-transport" aria-hidden="true"></i></td>
+              <td class="time">16:00-17:30</td>
+              <td><strong>老门东</strong>（步行）</td>
+              <td class="location">剪子巷54号</td>
+              <td class="details">距离1.2km，步行15-20分钟<br>免费，适合拍照打卡</td>
+            </tr>
+            <tr>
+              <td class="icon-cell"><i class="fas fa-car icon-transport" aria-hidden="true"></i></td>
+              <td class="time">18:00</td>
+              <td><strong>返程</strong></td>
+              <td class="location">南京 → 上海</td>
+              <td class="details">距离323km，约3.6小时<br>过路费：135-160元</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 交通信息 -->
+    <div class="transport">
+      <h2><i class="fas fa-route" aria-hidden="true"></i> 交通路线详情</h2>
+      <div class="route-item">
+        <div class="route-title">上海金山工业区 → 南京玄武湖</div>
+        <div class="route-details">
+          <span><i class="fas fa-road" aria-hidden="true"></i> 323公里</span>
+          <span><i class="fas fa-clock" aria-hidden="true"></i> 约3.6小时</span>
+          <span><i class="fas fa-coins" aria-hidden="true"></i> 135-160元过路费</span>
+        </div>
+        <div style="font-size: 12px; color: #666; margin-top: 5px;">
+          路线：G15沈海高速 → G2京沪高速 → G42沪蓉高速 → 玄武大道
+        </div>
+      </div>
+      <div class="route-item">
+        <div class="route-title">玄武湖 → 南京博物院</div>
+        <div class="route-details">
+          <span><i class="fas fa-road" aria-hidden="true"></i> 5.9公里</span>
+          <span><i class="fas fa-clock" aria-hidden="true"></i> 15-25分钟</span>
+          <span><i class="fas fa-coins" aria-hidden="true"></i> 无过路费</span>
+        </div>
+      </div>
+      <div class="route-item">
+        <div class="route-title">总统府 → 夫子庙</div>
+        <div class="route-details">
+          <span><i class="fas fa-road" aria-hidden="true"></i> 5.1公里</span>
+          <span><i class="fas fa-clock" aria-hidden="true"></i> 15-25分钟</span>
+          <span><i class="fas fa-coins" aria-hidden="true"></i> 无过路费</span>
+        </div>
+      </div>
+      <div class="route-item">
+        <div class="route-title">夫子庙 → 老门东</div>
+        <div class="route-details">
+          <span><i class="fas fa-walking" aria-hidden="true"></i> 1.2公里</span>
+          <span><i class="fas fa-clock" aria-hidden="true"></i> 15-20分钟步行</span>
+          <span><i class="fas fa-info-circle" aria-hidden="true"></i> 建议步行游览</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 停车信息 -->
+    <div class="parking">
+      <h2><i class="fas fa-parking" aria-hidden="true"></i> 停车信息</h2>
+      <div class="parking-item">
+        <div class="parking-name">玄武湖景区</div>
+        <div class="parking-details">
+          推荐：玄武湖景区情侣园停车场（龙蟠路100号）<br>
+          费用：5-10元/小时 | 便利性：⭐⭐⭐⭐
+        </div>
+      </div>
+      <div class="parking-item">
+        <div class="parking-name">南京博物院</div>
+        <div class="parking-details">
+          推荐：南京博物院地下停车场（中山东路321号）<br>
+          费用：6-10元/小时 | 便利性：⭐⭐⭐
+        </div>
+      </div>
+      <div class="parking-item">
+        <div class="parking-name">总统府</div>
+        <div class="parking-details">
+          推荐：大行宫市民广场地下停车场<br>
+          费用：6-12元/小时 | 便利性：⭐⭐⭐
+        </div>
+      </div>
+      <div class="parking-item">
+        <div class="parking-name">夫子庙/老门东</div>
+        <div class="parking-details">
+          推荐：夫子庙商贸城地下停车场（瞻园路）<br>
+          费用：8-15元/小时 | 便利性：⭐⭐⭐（周末紧张）
+        </div>
+      </div>
+    </div>
+
+    <!-- 费用预算 -->
+    <div class="budget">
+      <h2><i class="fas fa-calculator" aria-hidden="true"></i> 费用预算（6人）</h2>
+      <div class="budget-grid">
+        <div class="budget-item">
+          <div class="budget-label">往返交通费</div>
+          <div class="budget-amount">772-936元</div>
+        </div>
+        <div class="budget-item">
+          <div class="budget-label">停车费（2天）</div>
+          <div class="budget-amount">60-115元</div>
+        </div>
+        <div class="budget-item">
+          <div class="budget-label">门票费用</div>
+          <div class="budget-amount">150-300元</div>
+        </div>
+        <div class="budget-item">
+          <div class="budget-label">餐饮费（2天）</div>
+          <div class="budget-amount">600-1000元</div>
+        </div>
+        <div class="budget-item">
+          <div class="budget-label">住宿费（1晚）</div>
+          <div class="budget-amount">300-600元</div>
+        </div>
+        <div class="budget-total">
+          <div class="budget-label">总预算</div>
+          <div class="budget-amount">1,882-2,951元</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 实用信息 -->
+    <div class="tips">
+      <h2><i class="fas fa-lightbulb" aria-hidden="true"></i> 重要提示</h2>
+      <div class="tips-list">
+        <div class="tip-item">
+          <i class="fas fa-calendar-check" aria-hidden="true"></i>
+          <span><strong>预约提醒：</strong>南京博物院需提前1-2天预约（微信小程序或官网）</span>
+        </div>
+        <div class="tip-item">
+          <i class="fas fa-user-friends" aria-hidden="true"></i>
+          <span><strong>老人小孩：</strong>安排充足休息时间，避免高强度游览</span>
+        </div>
+        <div class="tip-item">
+          <i class="fas fa-car-side" aria-hidden="true"></i>
+          <span><strong>停车建议：</strong>周末停车较难，建议早到或使用网约车</span>
+        </div>
+        <div class="tip-item">
+          <i class="fas fa-umbrella" aria-hidden="true"></i>
+          <span><strong>天气准备：</strong>关注天气预报，准备雨具和防晒用品</span>
+        </div>
+        <div class="tip-item">
+          <i class="fas fa-baby" aria-hidden="true"></i>
+          <span><strong>带小孩：</strong>准备推车、水、零食，注意防晒防蚊</span>
+        </div>
+        <div class="tip-item">
+          <i class="fas fa-heart" aria-hidden="true"></i>
+          <span><strong>带老人：</strong>准备常用药品，选择无障碍设施完善的景点</span>
+        </div>
+      </div>
+      <div class="emergency-contacts">
+        <h3><i class="fas fa-phone-alt" aria-hidden="true"></i> 紧急联系电话</h3>
+        <div class="contact-item"><strong>旅游咨询：</strong>025-12301</div>
+        <div class="contact-item"><strong>紧急求助：</strong>110（警察）/ 120（急救）/ 119（火警）</div>
+        <div class="contact-item"><strong>高速救援：</strong>12122</div>
+      </div>
+    </div>
+
+    <!-- 地图导航 -->
+    <div class="amap-block">
+      <h3 style="font-size: 18px; color: #2c3e50; margin-bottom: 15px;">
+        <i class="fas fa-map-marked-alt" aria-hidden="true"></i> 高德地图导航
+      </h3>
+      <div style="font-size: 13px; color: #666;">
+        行程规划链接：请在手机高德地图APP中打开
+        <code class="amap-code">
+          amapuri://workInAmap/createWithToken?polymericId=mcp_5b2fbf7c56b3457d9d146b71be7f7d26&from=MCP
+        </code>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div style="margin-top: 40px; padding: 20px; text-align: center; color: #999; font-size: 12px; border-top: 1px solid #eee;">
+      <p>© 2025 南京2天家庭旅游规划表</p>
+      <p style="margin-top: 5px;">数据来源：高德地图 | 仅供参考，实际信息以现场为准</p>
+    </div>
+  </div>
+
+  <script>
+    // 简易 Toast
+    function showToast(msg, duration = 1800) {
+      const t = document.getElementById('toast');
+      if (!t) return;
+      t.textContent = msg;
+      t.classList.add('show');
+      clearTimeout(showToast._timer);
+      showToast._timer = setTimeout(() => t.classList.remove('show'), duration);
+    }
+
+    function isWeChat() {
+      return /MicroMessenger/i.test(navigator.userAgent || '');
+    }
+
+    function onShare() {
+      // 1. 微信内：展示引导遮罩
+      if (isWeChat()) {
+        document.getElementById('shareOverlay').classList.add('active');
+        return;
+      }
+      // 2. 支持 Web Share API 的手机浏览器
+      if (navigator.share) {
+        const shareData = {
+          title: document.title,
+          text: '南京2天家庭旅游规划表',
+          url: window.location.href
+        };
+        navigator.share(shareData).catch(() => {
+          // 用户取消或失败则回退到复制
+          copyLink();
+        });
+        return;
+      }
+      // 3. 其他环境：回退复制链接
+      copyLink();
+    }
+
+    function closeShareOverlay() {
+      document.getElementById('shareOverlay').classList.remove('active');
+    }
+
+    function onPrint() {
+      // 移动端很多浏览器不支持或体验不好，这里仅在桌面有意义
+      try {
+        window.print();
+      } catch (e) {
+        showToast('当前环境不支持打印');
+      }
+    }
+
+    // 复制链接（多重回退）
+    function copyLink() {
+      const url = window.location.href;
+      // 1. 现代浏览器 Clipboard API（需要https或localhost）
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('链接已复制到剪贴板');
+        }).catch(() => {
+          legacyCopy(url);
+        });
+        return;
+      }
+      // 2. 旧路径：选中复制
+      legacyCopy(url);
+    }
+
+    function legacyCopy(text) {
+      try {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.setAttribute('readonly', '');
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-9999px';
+        document.body.appendChild(textArea);
+        textArea.select();
+        const ok = document.execCommand && document.execCommand('copy');
+        document.body.removeChild(textArea);
+        if (ok) {
+          showToast('链接已复制到剪贴板');
+        } else {
+          // 3. 最终回退：弹出可长按复制
+          promptCopyFallback(text);
+        }
+      } catch (e) {
+        promptCopyFallback(text);
+      }
+    }
+
+    function promptCopyFallback(text) {
+      // 在部分内置浏览器里，alert 会被拦截或体验不佳，改为弹层提示
+      const overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.inset = '0';
+      overlay.style.background = 'rgba(0,0,0,0.6)';
+      overlay.style.zIndex = '1700';
+      overlay.style.display = 'flex';
+      overlay.style.alignItems = 'center';
+      overlay.style.justifyContent = 'center';
+      overlay.style.padding = '16px';
+
+      const panel = document.createElement('div');
+      panel.style.background = '#fff';
+      panel.style.borderRadius = '12px';
+      panel.style.padding = '16px';
+      panel.style.maxWidth = '90%';
+      panel.style.width = '520px';
+      panel.style.textAlign = 'center';
+      panel.innerHTML = '<div style="font-weight:600;margin-bottom:8px;color:#2c3e50;font-size:16px;">复制链接</div>';
+
+      const box = document.createElement('div');
+      box.style.border = '1px solid #eee';
+      box.style.borderRadius = '8px';
+      box.style.padding = '10px';
+      box.style.background = '#fafafa';
+      box.style.fontSize = '12px';
+      box.style.wordBreak = 'break-all';
+      box.style.textAlign = 'left';
+      box.textContent = text;
+
+      const tip = document.createElement('div');
+      tip.style.color = '#666';
+      tip.style.fontSize = '12px';
+      tip.style.marginTop = '8px';
+      tip.textContent = '长按上方文字可复制';
+
+      const btn = document.createElement('button');
+      btn.textContent = '关闭';
+      btn.style.marginTop = '12px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#3498db';
+      btn.style.color = '#fff';
+      btn.style.border = 'none';
+      btn.style.borderRadius = '6px';
+      btn.style.cursor = 'pointer';
+      btn.style.width = '100%';
+
+      btn.addEventListener('click', () => document.body.removeChild(overlay));
+
+      panel.appendChild(box);
+      panel.appendChild(tip);
+      panel.appendChild(btn);
+      overlay.appendChild(panel);
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) document.body.removeChild(overlay);
+      });
+      document.body.appendChild(overlay);
+    }
+
+    // 打印优化（桌面）
+    if (window.matchMedia && window.matchMedia('print').matches === false) {
+      window.addEventListener('beforeprint', function() {
+        document.body.style.background = 'white';
+      });
+      window.addEventListener('afterprint', function() {
+        document.body.style.background = 'linear-gradient(135deg, #2c3e50 0%, #3498db 100%)';
+      });
+    }
+  </script>
+</body>
+</html>
